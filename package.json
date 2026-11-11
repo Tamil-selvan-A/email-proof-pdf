@@ -1,0 +1,17 @@
+{
+  "name": "html-pdf-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Design HTML/CSS layouts, preview in the browser, and export merged high-quality PDFs with Playwright.",
+  "scripts": {
+    "start": "node src/server.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.56.1"
+  }
+}

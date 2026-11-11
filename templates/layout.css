@@ -1,0 +1,104 @@
+/* Shared print layout. Loaded by generated HTML (also inlined by src/template.js). */
+@page { margin: 0; size: auto; }
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #1f2836;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: fit-content;
+  min-width: var(--page-width);
+  min-height: var(--page-height, auto);
+  margin: 0;
+  padding: 90px 79px 0 0;
+  background: #ffffff;
+  position: relative;
+  overflow: visible;
+}
+
+.view-label {
+  position: absolute;
+  left: 80px;
+  top: 118px;
+  min-width: 188px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1;
+  padding: 18px 16px;
+  border: 2px solid #c8c8c8;
+  background: #ffffff;
+  color: #1f2836;
+}
+
+.email-card {
+  margin-left: var(--gutter);
+  width: max(var(--content-width), min-content);
+  border: 2px solid #c8c8c8;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.meta {
+  background: linear-gradient(180deg, #fbfbfb 0%, #ececec 100%);
+  padding: 36px 34px 28px 24px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.key {
+  width: 132px;
+  flex: 0 0 132px;
+  padding-top: 12px;
+  padding-right: 16px;
+  text-align: right;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #1f2836;
+}
+
+.val {
+  flex: 1 1 auto;
+  min-height: 52px;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #1f2836;
+  word-break: break-word;
+}
+
+.val.single-line {
+  flex: 1 0 auto;
+  min-width: max-content;
+  white-space: nowrap;
+  word-break: normal;
+}
+
+.shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+}
